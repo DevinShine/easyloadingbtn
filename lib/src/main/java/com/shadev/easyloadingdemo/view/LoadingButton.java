@@ -94,7 +94,6 @@ public class LoadingButton extends View{
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        isDefaultDraw = false;
                         isShowArc = true;
                         invalidate();
                         ScaleAnimation scaleAnimation = new ScaleAnimation(0f,1f,0f,1f, Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
@@ -109,7 +108,8 @@ public class LoadingButton extends View{
                             }
 
                         });
-                        LoadingButton.this.startAnimation(scaleAnimation);
+                        if(isDefaultDraw) LoadingButton.this.startAnimation(scaleAnimation);
+                        isDefaultDraw = false;
 
                     }
 
@@ -118,7 +118,7 @@ public class LoadingButton extends View{
 
                     }
                 });
-                LoadingButton.this.startAnimation(scaleAnimation);
+                if(isDefaultDraw) LoadingButton.this.startAnimation(scaleAnimation);
             }
         });
     }
