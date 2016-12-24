@@ -26,4 +26,4 @@ mDefaultLButton.setCallback(new LoadingButton.Callback() {
 ```
 
 
-  [1]: http://i3.tietuku.com/8249cf16ee579037.gif
+  [1]: http://ww1.sinaimg.cn/mw690/9994fcfcgw1eqmpazqenmg20fo0l6wg5.gif
