@@ -1,10 +1,10 @@
 This is a library project with a custom view that implements concept of Send Comment (https://dribbble.com/shots/1986254-Send-Comment-Shoppr) made by Nikosaurier for android
 
 
-###Demo
+### Demo
 ![demo][1]
 
-###Usage
+### Usage
 Add the EasyLoadingBtn in your layout
 
 ```
